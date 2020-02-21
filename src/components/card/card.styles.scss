@@ -1,0 +1,26 @@
+@import './../../_scss/variables';
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--info);
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  padding: 25px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+
+  img {
+      margin: 0 auto;
+  }
+  a {
+      color: var(--white);
+  }
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+}

@@ -1,10 +1,31 @@
+@import './_scss/variables';
+
+body {
+  padding: 30px 0;
+}
+
+h1 {
+  font-family: 'Bigelow Rules';
+  font-size: 72px;
+  color: #0ccac4;
+}
+
 .App {
   text-align: center;
+  input[type=search] {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    width: 100vh;
+  }
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.error {
+  color: var(--red);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +35,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--gray-dark);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--white);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--cyan);
 }
 
 @keyframes App-logo-spin {
